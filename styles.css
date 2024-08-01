@@ -10,13 +10,17 @@ body{
 .content,.info,.window,.quote,.contact,.footer,.call,.sign-up,.contact,.about,.template,.logo,.by,.image{}
 
 .header ,.template.main , .footer {
-background-color: #1f2937;
+background-color: #7b904b;
 
 }
 .header,.template.main , .footer{
-    color: #F9FAF8;
+    color: #1f2937;
     font-size: 24px;
     font-weight: bold;
+}
+
+.template.main{
+    gap: 16px;
 }
 
 .header{
@@ -24,31 +28,37 @@ background-color: #1f2937;
     justify-content: space-between;
     padding: 10px 68px;
     flex: 1;
+    flex-wrap: wrap;
 }
-ul{
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: auto 20px 0 0;
+.header .logo{
+    width: 200px;
+    height: auto;
 }
-li{
-    margin: 0 0 0 15px;
+img{
+    width: inherit;
+    height: inherit;
+}
+
+.image img{
+    border-radius: 20px;
 }
 
 a,.about.info{
     font-weight: 300;
     font-size: 18px;
-
+    
+    
 }
 a{
     text-decoration: none;
-    color: #E5E7EB;
-
+    color: #1f2937;
+    
 }
 .about {
     font-size: 48px;
     font-size: extra-bold;
-
+    flex: 1;
+    
 }
 
 .template{
@@ -56,18 +66,24 @@ a{
     align-items: center;
     justify-content: space-around;
     padding: 50px;
-   
+    
 }
 .image{
     display: flex;
-    background: #636466;
-    padding: 50px;
+    background: inherit;
+    padding: 0;
+    margin: 0;
+    border-radius: 20px;
     align-items: center;
     justify-content: center;
+    height: 350px;
+    width: auto;
+    flex: 1;
+    
 }
 
 .call,.sign-up{
-    background-color: #3882F6;
+    background-color: #58641d;
 }
 
 .template.info{
@@ -78,19 +94,22 @@ a{
 }
 
 .window{
-    border:#3882F6 solid 4px ;
-    
+    border:#58641d solid 4px ;
     height: 200px;
     width: 200px;
     border-radius: 20px;
-    padding: 10px;
+    background: #58641d;
+    
+}
+.window img{
+    border-radius: 20px;
 }
 .card{
- display: flex;
- flex-flow:column wrap;
- flex: 1;
- justify-content: center;
- align-items: center;
+    display: flex;
+    flex-flow:column wrap;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
 }
 
 .template.cards{
@@ -98,7 +117,7 @@ a{
     padding: 12px;
     gap: 34px;
     flex-wrap: wrap;
-
+    
 }
 .head{
     font-size: 36px;
@@ -106,10 +125,10 @@ a{
 }
 
 .template.quote{
-    background-color: #E5E7EB;
+    background-color: #DBD2E0;
     flex-direction: column;
     color: #1f2937;
-
+    
 }
 .quote{
     font-weight: 300;
@@ -152,7 +171,7 @@ a{
 }
 
 .sign-up{
-   
+    
     border-radius: 5px;
     padding: 6px 28px;
     font-size: 16px;
@@ -161,15 +180,21 @@ a{
     font-weight: bold;
     border: none;
 }
-
-
-
 .footer{
     display: flex;
-padding: 20px;
-justify-content: center;
-align-items: center;
-font-weight: 300;
-font-size: 12px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    font-size: 12px;
 }
 
+ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: auto 20px 0 0;
+}
+li{
+    margin: 0 0 0 15px;
+}
