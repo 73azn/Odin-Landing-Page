@@ -5,6 +5,7 @@ body{
     display: flex;
     flex-direction: column;
     font-family: "Roboto" , sans-serif;
+    box-sizing: border-box;
 }
 /* declare all classes for my own work */
 .content,.info,.window,.quote,.contact,.footer,.call,.sign-up,.contact,.about,.template,.logo,.by,.image{}
@@ -13,21 +14,27 @@ body{
 background-color: #7b904b;
 
 }
+
+
 .header,.template.main , .footer{
     color: #1f2937;
     font-size: 24px;
     font-weight: bold;
+    display: flex;
 }
 
 .template.main{
     gap: 16px;
+    flex-wrap: wrap;
+    flex: 1;
+   
 }
 
 .header{
     display: flex;
     justify-content: space-between;
     padding: 10px 68px;
-    flex: 1;
+    
     flex-wrap: wrap;
 }
 .header .logo{
@@ -41,6 +48,8 @@ img{
 
 .image img{
     border-radius: 20px;
+    flex-shrink: 1;
+
 }
 
 a,.about.info{
@@ -69,7 +78,6 @@ a{
     
 }
 .image{
-    display: flex;
     background: inherit;
     padding: 0;
     margin: 0;
@@ -77,8 +85,9 @@ a{
     align-items: center;
     justify-content: center;
     height: 350px;
-    width: auto;
-    flex: 1;
+    
+
+    flex-shrink: 1;
     
 }
 
