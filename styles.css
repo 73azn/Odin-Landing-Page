@@ -30,8 +30,9 @@ background-color: #7b904b;
 
 .header{
     display: flex;
-    justify-content: space-between;
-    padding: 10px 68px;
+    justify-content: space-around;
+    padding: 10px 0px;
+
     
     flex-wrap: wrap;
 }
